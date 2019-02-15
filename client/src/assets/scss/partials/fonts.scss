@@ -1,0 +1,7 @@
+@import "./mixins.scss";
+@include font-face("roboto", "../fonts/RobotoRegular/RobotoRegular");
+@include font-face("roboto", "../fonts/RobotoBold/RobotoBold");
+@include font-face("Raleway", "../fonts/RalewayRegular/RalewayRegular");
+@include font-face("RalewayBold", "../fonts/RalewayBold/RalewayBold");
+@include font-face("RalewayLight", "../fonts/RalewayLight/RalewayLight");
+@include font-face("RalewaySemiBold", "../fonts/RalewaySemiBold/RalewaySemiBold");
