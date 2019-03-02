@@ -1,0 +1,15 @@
+@import "./assets/scss/libs/bootstrap-reboot.css";
+@import "./assets/scss/libs/bootstrap-grid.css";
+@import "~materialize-css/dist/css/materialize.css";
+@import "./assets/scss/partials/variables.scss";
+@import "./assets/scss/partials/mixins.scss";
+@import "./assets/scss/partials/fonts.scss";
+@import "./assets/scss/partials/utilities.scss";
+@import './assets/scss/main.scss';
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+

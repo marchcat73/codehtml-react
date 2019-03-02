@@ -1,0 +1,43 @@
+:root {
+/* adaptive */
+  --screen-k8: 8192px;
+  --screen-k4: 4096px;
+  --screen-uhd: 3840px;
+  --screen-rt15: 2880px;
+  --screen-rt: 2560px;
+  --screen-fhd: 1920px;
+  --screen-xga: 1600px;
+  --screen-xga-max: 1599.98px;
+  --screen-xxl: 1400px;
+  --screen-xxl-max: 1399.98px;
+  --screen-xl: 1200px;
+  --screen-xl-max: 1199.98px;
+  --screen-lg: 992px;
+  --screen-lg-max: 991.98px;
+  --screen-md: 768px;
+  --screen-md-max: 767.98px;
+  --screen-sm: 576px;
+  --screen-sm-max: 575.98px;
+/* fonts */
+  --heder-font: "Raleway", sans-serif;
+  --default-font: "Raleway", sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
