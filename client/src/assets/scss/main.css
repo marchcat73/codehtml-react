@@ -136,7 +136,6 @@ section h2 {
 
 .main_head {
   min-height: 420px;
-  padding-top: 20px;
   max-height: 500px
 }
 
@@ -202,7 +201,8 @@ svg path {
   margin-left: 0;
   margin-right: 0;
   -webkit-animation-delay: .5s;
-  animation-delay: .5s
+  animation-delay: .5s;
+  margin-top: 0;
 }
 
 .main_footer {

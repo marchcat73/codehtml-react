@@ -1,0 +1,40 @@
+{
+  "name": "codehtml-react",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "server": "nodemon index",
+    "client-install": "npm install --prefix client",
+    "client": "npm run start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marchcat73/codehtml-react.git"
+  },
+  "author": "Vitaliy Vanushin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/marchcat73/codehtml-react/issues"
+  },
+  "homepage": "https://github.com/marchcat73/codehtml-react#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "jsonwebtoken": "^8.5.0",
+    "moment": "^2.24.0",
+    "mongoose": "^5.4.19",
+    "morgan": "^1.9.1",
+    "multer": "^1.4.1",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0"
+  },
+  "devDependencies": {
+    "concurrently": "^4.1.0",
+    "nodemon": "^1.18.10"
+  }
+}

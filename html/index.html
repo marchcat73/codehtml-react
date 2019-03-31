@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>React App on HTML Page</title>
+	<script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+	<script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+	
+	<!-- Don't use this in production: -->
+	<script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+</head>
+<body>
+<div id="root"></div>
+<h2>test</h2>
+
+<script type="text/babel">
+
+const TodoList = () => {
+  const items = ['Learn React', 'Build Awesome App']
+  return (
+    <ul>
+      <li>{ items[0] }</li>
+      <li>{ items[1] }</li>
+    </ul>
+  )
+}
+
+const AppHeader = () => {
+  return (
+    <h1>My Todo List</h1>
+  )  
+}
+
+const SearchPanel = () => {
+  const searchText = 'Type here to search'
+  return (
+    <input placeholder={ searchText } />
+  )
+}
+
+const App = () => {
+  const isLoggedIn = true
+  const loginBox = <span>Log in please</span>
+  const welcomeBox = <span>Welcome</span>
+
+  return (
+    <div>
+      <span>{ (new Date()).toLocaleDateString()}</span><br /><br />
+      { isLoggedIn ? welcomeBox : loginBox }
+      <AppHeader />
+      <SearchPanel />
+      <TodoList />
+    </div>
+  )
+}
+
+ReactDOM.render(<App />, document.getElementById('root'));
+
+</script>
+</body>
+</html>

@@ -1,116 +1,18 @@
 import React, { Component } from 'react';
-// import MaterialIcon from 'material-icons-react';
 
 import HeaderMenu from '../header-menu'
+import Home from '../home'
+import Price from '../price'
 
 import './app.css';
 
-class App extends Component {
+export default class App extends Component {
   render() {
     return (
       <div>
         <HeaderMenu />
-        <header className="main_head main_color_bg parallax-container">
-          <div className="parallax" ><img src="./assets/img/bg.jpg" alt="" /></div>
-          <div className="top_wrapper">
-            <div className="top_text">
-              <h1>Вёрстка сайтов</h1>
-              <p>Web-мастер / Верстальщик</p>
-            </div>
-          </div>
-        </header>
-        <section id="about" className="s_about bg_light">
-          <div className="section_header">
-            <h2>Услуги</h2>
-            <div className="s_descr_wrap">
-              <div className="s_descr"><p>Информация</p></div>
-            </div>
-          </div>
-          <div className="section_content">
-            <div className="container">
-              <div className="row">
-                <div className="col-lg-4 order-2 animation_1">
-                  <h3>Фото</h3>
-                  <div className="person">
-                    <img src="./assets/img/photo.jpg" alt="Alt" className="materialboxed" data-originalwidth="392" />
-                  </div>
-                </div>
-                <div className="col-lg-4 order-1 animation_2">
-                  <h3>Используемые технологии</h3>
-                  <ul>
-                    <li>Вёрстка из PSD макетов</li>
-                    <li>HTML5</li>
-                    <li>CSS3</li>
-                    <li>SASS</li>
-                    <li>Gulp</li>
-                    <li>Bootstrap</li>
-                    <li>Flexbox</li>
-                    <li>JavaScrypt</li>
-                    <li>Node JS</li>
-                    <li>MongoDB</li>
-                    <li>Angular 6</li>
-                  </ul>
-
-                  <p>Bалидно, адаптивно, кроссброузерно.</p>
-                </div>
-                <div className="col-lg-4 order-3 animation_3 personal_last_block">
-                  <h3>Персональная информация</h3>
-                  <ul>
-                    <li>Профессиональное создание сайтов: HTML верстка, посадка на CMS ModX Revo.</li>
-                    <li>Skype: marchcat7373</li>
-                    <li>Веб-сайт: <a href="//codehtml.ru" target="_blank" rel="noopener noreferrer">codehtml.ru</a></li>
-                  </ul>
-                  <div className="social_wrap">
-                    <ul>
-                      <li><a href="#!" target="_blank" rel="noopener noreferrer"><i className="fab fa-twitter"></i></a></li>
-                      <li><a href="#!" target="_blank" rel="noopener noreferrer"><i className="fab fa-vk"></i></a></li>
-                      <li><a href="#!" target="_blank" rel="noopener noreferrer"><i className="fab fa-facebook"></i></a></li>
-                      <li><a href="#!" target="_blank" rel="noopener noreferrer"><i className="fab fa-github"></i></a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section className="s_resume">
-          <div className="section_header">
-            <h2>Цены</h2>
-            <div className="s_descr_wrap">
-              <div className="s_descr">Примерная стоимость услуг по созданию сайтов</div>
-            </div>
-          </div>
-          <div className="section_content">
-            <div className="container">
-              <div className="row resume_container">
-                  <div className="col-lg-6 col-md-6 left">
-                    <h3>Вёрстка</h3>
-                    <div className="resume_icon"><i className="icon-basic-sheet-pen"></i></div>
-                    <div className="resume_item">
-                      <div className="year"><p>Вёрстка главной страницы</p></div>
-                      <div className="resume_description"><p><strong>Цена договорная</strong></p></div>
-                    </div>
-                    <div className="resume_item">
-                      <div className="year"><p>Вёрстка внутренней страницы</p></div>
-                      <div className="resume_description"><p><strong>Цена договорная</strong></p></div>
-                    </div>
-                  </div>
-                  <div className="col-lg-6 col-md-6 right">
-                    <h3>Интеграция с CMS</h3>
-                    <div className="resume_icon"><i className="icon-basic-gear"></i></div>
-                    <div className="resume_item">
-                      <div className="year"><p>Посадка на ModX Revo</p></div>
-                      <div className="resume_description"><p><strong>Цена договорная</strong></p></div>                
-                    </div>
-                    <div className="resume_item">
-                        <div className="year"><p>Разработка SPA на Angular 6</p></div>
-                        <div className="resume_description"><p><strong>Цена договорная</strong></p></div>                
-                      </div>
-                  </div>                
-              </div>
-            </div>
-          </div>
-        </section>
+        <Home />
+        <Price />
         <section id="portfolio" className="s_portfolio bg_dark">
           <div className="section_header">
             <h2>Портфолио</h2>
@@ -308,7 +210,7 @@ class App extends Component {
                   <div className="contact_box">
                     <i className="contacts_icon fab fa-wpforms"></i>
                     <h3>Веб-сайт:</h3>
-                    <p><a href="//codehtml.ru" target="_blank">codehtml.ru</a></p>
+                    <p><a href="//codehtml.ru">codehtml.ru</a></p>
                   </div>
                 </div>
                 <div className="col-md-6 col-sm-6">
@@ -339,5 +241,3 @@ class App extends Component {
     );
   }
 }
-
-export default App;
