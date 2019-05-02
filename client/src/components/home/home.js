@@ -51,7 +51,7 @@ export default class Home extends Component {
               <div className="col-lg-4 order-3 animation_3 personal_last_block">
                 <h3>Персональная информация</h3>
                 <ul>
-                  <li>Профессиональное создание сайтов: HTML верстка, посадка на CMS ModX Revo.</li>
+                  <li>Профессиональное создание сайтов.</li>
                   <li>Skype: marchcat7373</li>
                   <li>Веб-сайт: <a href="//codehtml.ru" target="_blank" rel="noopener noreferrer">codehtml.ru</a></li>
                 </ul>
