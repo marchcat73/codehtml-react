@@ -1,6 +1,7 @@
-@import "./assets/scss/libs/bootstrap-reboot.css";
-@import "./assets/scss/libs/bootstrap-grid.css";
+/* @import "./assets/scss/libs/bootstrap-reboot.css";
+@import "./assets/scss/libs/bootstrap-grid.css"; */
 @import "~materialize-css/dist/css/materialize.css";
+@import "~bootstrap/dist/css/bootstrap.css";
 /* @import "./assets/scss/partials/variables.scss"; */
 /* @import "./assets/scss/partials/mixins.scss"; */
 @import "./assets/scss/partials/fonts.css";

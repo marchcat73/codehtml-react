@@ -4,9 +4,12 @@ import HeaderMenu from '../header-menu'
 import Home from '../home'
 import Price from '../price'
 
-import './app.css';
+import './app.scss';
 
 export default class App extends Component {
+
+
+
   render() {
     return (
       <div>
