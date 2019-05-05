@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import './technologies.css';
 
-export default class Technologies extends Component {
+class Technologies extends Component {
 
   state = {
     technologies: [
@@ -16,7 +16,7 @@ export default class Technologies extends Component {
       {name: 'JavaScrypt'},
       {name: 'Node JS'},
       {name: 'MongoDB'},
-      {name: 'Angular 6'},
+      {name: 'React JS'},
       {name: 'Vue JS'}
     ]
   }
@@ -47,3 +47,5 @@ export default class Technologies extends Component {
   }
 
 }
+
+export default Technologies
