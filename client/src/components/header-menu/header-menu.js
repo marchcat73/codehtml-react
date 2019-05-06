@@ -3,9 +3,20 @@ import {Link} from 'react-router-dom'
 import MaterialIcon from 'material-icons-react';
 
 
-import './header-menu.css';
+import './header-menu.scss';
 
 class HeaderMenu extends Component {
+  state = {
+    isOpen: false
+  }
+
+  menuToggleHandler = () => {
+    this.setState({
+      isOpen: !this.state.isOpen
+    })
+    console.log(this.state.isOpen)
+  }
+
   render() {
     let links = (
       <React.Fragment>
@@ -57,7 +68,23 @@ class HeaderMenu extends Component {
               </svg>
             </div>
           </Link>
-          <a href="#!" data-target="mobile-demo" className="sidenav-trigger"><MaterialIcon icon="menu" color="#ffffff" /></a>
+          <button 
+            className="menutoggle"
+            onClick={this.menuToggleHandler}
+          >
+          {
+            !this.state.isOpen
+            ?
+              <MaterialIcon 
+              icon="menu" color="#ffffff" 
+              />
+            :
+              <MaterialIcon 
+              icon="close" color="#ffffff" 
+              />
+          }
+
+          </button>
           <ul className="right hide-on-med-and-down">
             { links }
           </ul>
